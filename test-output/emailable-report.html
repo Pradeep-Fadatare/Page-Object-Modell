@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default Suite</th></tr>
+<tr><td><a href="#t0">PageObjectModule</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">88,635</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PageObjectModule &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.newproject.testcases.SignInTestCase</td><td><a href="#m0">teardown</a></td><td rowspan="1">1661339384231</td><td rowspan="1">2</td></tr><tr><th colspan="4">PageObjectModule &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.newproject.testcases.SignInTestCase</td><td><a href="#m1">signin</a></td><td rowspan="1">1661339371473</td><td rowspan="1">12580</td></tr><tr><th colspan="4">PageObjectModule &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="4">com.newproject.testcases.SignInTestCase</td><td><a href="#m2">setup</a></td><td rowspan="2">1661339384233</td><td rowspan="2">-1661339384233</td></tr><tr class="skippedeven"><td><a href="#m3">setup</a></td></tr><tr class="skippedeven"><td><a href="#m4">teardown</a></td><td rowspan="2">1661339384243</td><td rowspan="2">-1661339384243</td></tr><tr class="skippedeven"><td><a href="#m5">teardown</a></td></tr><tr><th colspan="4">PageObjectModule &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.newproject.testcases.SignInTestCase</td><td><a href="#m6">signin</a></td><td rowspan="2">1661339384243</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m7">signin</a></td></tr></tbody>
+</table>
+<h2>PageObjectModule</h2><h3 id="m0">com.newproject.testcases.SignInTestCase#teardown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.newproject.base.DriverInitialising.teardown(DriverInitialising.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.newproject.testcases.SignInTestCase#signin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>padya@gmail.com</td><td>TL7Rrkzn@v$j4#g</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=104.0.5112.102)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-V6F1B6R&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa5eb4a6ff83636b4224b66b5c73774a, sendKeysToElement {id=fe12c1bb-caff-48a2-8b04-a020b2b762c5, value=[Ljava.lang.CharSequence;@59636c47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\91956\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49681}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49681/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (aa5eb4a6ff83636b4224b66b5c73774a)] -&gt; xpath: //*[@id=&apos;password&apos;]]
+Session ID: aa5eb4a6ff83636b4224b66b5c73774a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at com.newproject.pages.SighupPage.signintozaho(SighupPage.java:28)
+	at com.newproject.testcases.SignInTestCase.signin(SignInTestCase.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.newproject.testcases.SignInTestCase#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.newproject.testcases.SignInTestCase#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.newproject.testcases.SignInTestCase#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.newproject.testcases.SignInTestCase#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.newproject.testcases.SignInTestCase#signin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>padyafadatare@gmail.com</td><td>@v$j4#g</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
+	at com.newproject.base.DriverInitialising.teardown(DriverInitialising.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.newproject.testcases.SignInTestCase#signin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>padyafadatare@gmail.com</td><td>TL7Rrkzn@v$j4#</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
+	at com.newproject.base.DriverInitialising.teardown(DriverInitialising.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
