@@ -18,7 +18,8 @@ public class AddSystemInformation {
         //india is my country
         //All brothers are my sisters
         //India is contry
-        
+        // Kill all propreties
+
 
         FileReader fr = new FileReader("C:\\Users\\91956\\IdeaProjects\\PageObjectModule\\src\\main\\java\\com\\newproject\\config\\config.properties");
         Properties prop = new Properties();
