@@ -17,6 +17,8 @@ public class AddSystemInformation {
     public static void main(String[] args) throws IOException {
         //india is my country
         //All brothers are my sisters
+        //India is contry
+        
 
         FileReader fr = new FileReader("C:\\Users\\91956\\IdeaProjects\\PageObjectModule\\src\\main\\java\\com\\newproject\\config\\config.properties");
         Properties prop = new Properties();
